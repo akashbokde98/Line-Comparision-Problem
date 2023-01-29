@@ -39,11 +39,15 @@ namespace LineComparision
             }
             if (lenList[0] == lenList[1])
             {
-                Console.WriteLine("Lengths are Equal and Preferable.");
+                Console.WriteLine("Length of Lines are Equal.");
+            }
+            else if (lenList[0] > lenList[1])
+            {
+                Console.WriteLine("Line 1 is Greater.");
             }
             else
             {
-                Console.WriteLine("Lengths are Not Equal");
+                Console.WriteLine("Line 2 is Greater.");
             }
         }
         public static double SquareRoot(float x1, float y1, float x2, float y2)
