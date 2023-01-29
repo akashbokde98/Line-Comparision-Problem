@@ -18,24 +18,11 @@ namespace LineComparision
         static void Main(string[] args)
         {
             Console.WriteLine("Line Comparision Computation Program.");
-            /*Console.WriteLine("Enter Vaule of Point x1 on X Co-Ordinate.");
-            int x1 = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter Vaule of Point y1 on Y Co-Ordinate.");
-            int y1 = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter Vaule of Point x2 on X Co-Ordinate.");
-            int x2 = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter Vaule of Point y2 on Y Co-Ordinate.");
-            int y2 = int.Parse(Console.ReadLine());*/
-
             Program obj = new Program(5, 4, 6, 8);
             double lineLength = SquareRoot(obj.x1, obj.y1, obj.x2, obj.y2);
             Console.WriteLine(lineLength);
 
         }
-
         public static double SquareRoot(float x1, float y1, float x2, float y2)
         {
             double v1 = Math.Pow((x2 - x1), 2);
